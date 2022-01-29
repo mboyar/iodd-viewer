@@ -1,0 +1,557 @@
+<html>
+
+<head>
+  <title>Export XML data to HTML Table </title>
+  <h2>IODD Viewer </h2>
+</head>
+
+<body>
+  <table id="tblIODD" cellpadding="0" cellspacing="0">
+    <tr>
+      <th>TextId</th>
+      <th>Value</th>
+      </tr>
+    
+    <tr>
+      <td>TI_VendorText</td>
+      <td>Balluff GmbH</td>
+      </tr>
+    
+    <tr>
+      <td>TI_VendorUrl</td>
+      <td>http://www.balluff.com</td>
+      </tr>
+    
+    <tr>
+      <td>TI_DeviceName</td>
+      <td>BUS M18M1-GPXI-02/015-S92G</td>
+      </tr>
+    
+    <tr>
+      <td>TI_DeviceFamily</td>
+      <td>BUS M18M1-GPXI-02/015-S92G</td>
+      </tr>
+    
+    <tr>
+      <td>TI_ProductName_Name1</td>
+      <td>BUS0020</td>
+      </tr>
+    
+    <tr>
+      <td>TI_ProductText_Text1</td>
+      <td>Ultrasonic proximity switch with 1 push-pull switched output, loadable to 100 mA, 150 mm operating range. 
+IODD is applicable to: BUS0020</td>
+      </tr>
+    
+    <tr>
+      <td>TI_ProcessDataIn_Value</td>
+      <td>Interval</td>
+      </tr>
+    
+    <tr>
+      <td>TI_ProcessDataIn_Status</td>
+      <td>Switching status</td>
+      </tr>
+    
+    <tr>
+      <td>TI_ProcessDataIn_Status_0</td>
+      <td>Not connected</td>
+      </tr>
+    
+    <tr>
+      <td>TI_ProcessDataIn_Status_1</td>
+      <td>Connected</td>
+      </tr>
+    
+    <tr>
+      <td>TI_PD_ProcessDataIn</td>
+      <td>Interval, switching status</td>
+      </tr>
+    
+    <tr>
+      <td>TI_V_SwitchPoint1</td>
+      <td>Switching point 1 (SP1)</td>
+      </tr>
+    
+    <tr>
+      <td>TID_V_SwitchPoint1</td>
+      <td>Switched output is activated when distance to an object is under SP1.
+Adjusting range: 25.01…248.02 mm
+Pointer: The entered value is rounded to a multiple of the measurement value resolution.
+</td>
+      </tr>
+    
+    <tr>
+      <td>TI_V_BackspacePoint1</td>
+      <td>Return switching point 1 (RP1)</td>
+      </tr>
+    
+    <tr>
+      <td>TID_V_BackspacePoint1</td>
+      <td>Switched output is reactivated when distance to an object is greater than RP1 (SP1 &#43; hysteresis).
+Adjusting range: 25.97…248.99 mm
+Pointer: RP1 must be greater than SP1.
+</td>
+      </tr>
+    
+    <tr>
+      <td>TI_V_BackspacePoint2</td>
+      <td>Return switching point 2 (RP2)</td>
+      </tr>
+    
+    <tr>
+      <td>TID_V_BackspacePoint2</td>
+      <td>Switched output is reactivated when distance to an object is under RP2 (SP2 - hysteresis).
+Adjusting range: 25.97…4501.00 mm
+Pointer: RP2 must be greater than RP1. If SP2 and RP2 are above maximum range, window mode is disabled.
+</td>
+      </tr>
+    
+    <tr>
+      <td>TI_V_SwitchPoint2</td>
+      <td>Switching point 2 (SP2)</td>
+      </tr>
+    
+    <tr>
+      <td>TID_V_SwitchPoint2</td>
+      <td>Switched output is activated when distance to an object is greater than SP2.
+Adjusting range: 27.00…4501.00 mm
+Pointer: SP2 must be graeter than RP2. If SP2 and RP2 are above maximum range, window mode is disabled.
+</td>
+      </tr>
+    
+    <tr>
+      <td>TI_V_Foregroundsuppression</td>
+      <td>Foreground suppression</td>
+      </tr>
+    
+    <tr>
+      <td>TID_V_Foregroundsuppression</td>
+      <td>All echo signals closer than foreground suppression are ignored.
+Adjusting range: 21.99…75.03 mm
+Pointer: The foreground suppression is an offset on the blindzone
+</td>
+      </tr>
+    
+    <tr>
+      <td>TI_V_DetectionRange</td>
+      <td>Detection range</td>
+      </tr>
+    
+    <tr>
+      <td>TID_V_DetectionRange</td>
+      <td>Maximum detection range of the sensor.
+Adjusting range: 250.02…500.03 mm
+</td>
+      </tr>
+    
+    <tr>
+      <td>TI_V_TeachButton</td>
+      <td>Teach-In via Pin 5</td>
+      </tr>
+    
+    <tr>
+      <td>TID_V_TeachButton</td>
+      <td>Activate/Deactivate external teach in via pin 5.
+Pointer: Teach in via Pin 5 is available only in SIO mode. During IO-Link mode pin 5 has no function.</td>
+      </tr>
+    
+    <tr>
+      <td>TI_V_TeachButton_Lock</td>
+      <td>Deactivated</td>
+      </tr>
+    
+    <tr>
+      <td>TI_V_TeachButton_Release</td>
+      <td>Activated</td>
+      </tr>
+    
+    <tr>
+      <td>TI_V_SwitchingMode</td>
+      <td>NO/NC operation</td>
+      </tr>
+    
+    <tr>
+      <td>TID_V_SwitchingMode</td>
+      <td>The NC or NO output function can be preset for the switched output.</td>
+      </tr>
+    
+    <tr>
+      <td>TI_V_SwitchingMode_0</td>
+      <td>NO normally open</td>
+      </tr>
+    
+    <tr>
+      <td>TI_V_SwitchingMode_2</td>
+      <td>NC normally closed</td>
+      </tr>
+    
+    <tr>
+      <td>TI_V_Filter</td>
+      <td>Filter</td>
+      </tr>
+    
+    <tr>
+      <td>TID_V_Filter</td>
+      <td>There are 5 filter settings: F00: No filter | F01: Standard filter | F02: Average value filter | F03: foreground filter | F04: background filter</td>
+      </tr>
+    
+    <tr>
+      <td>TI_V_Filter_0</td>
+      <td>F00</td>
+      </tr>
+    
+    <tr>
+      <td>TI_V_Filter_1</td>
+      <td>F01</td>
+      </tr>
+    
+    <tr>
+      <td>TI_V_Filter_2</td>
+      <td>F02</td>
+      </tr>
+    
+    <tr>
+      <td>TI_V_Filter_3</td>
+      <td>F03</td>
+      </tr>
+    
+    <tr>
+      <td>TI_V_Filter_4</td>
+      <td>F04</td>
+      </tr>
+    
+    <tr>
+      <td>TI_V_FilterStrength</td>
+      <td>Filter strength</td>
+      </tr>
+    
+    <tr>
+      <td>TID_V_FilterStrength</td>
+      <td>A filter strength between 0 – weak filter effect – and 9 – pronounced filter effect – can be selected for each measurement filter.</td>
+      </tr>
+    
+    <tr>
+      <td>TI_V_FilterStrength_0</td>
+      <td>P00</td>
+      </tr>
+    
+    <tr>
+      <td>TI_V_FilterStrength_1</td>
+      <td>P01</td>
+      </tr>
+    
+    <tr>
+      <td>TI_V_FilterStrength_2</td>
+      <td>P02</td>
+      </tr>
+    
+    <tr>
+      <td>TI_V_FilterStrength_3</td>
+      <td>P03</td>
+      </tr>
+    
+    <tr>
+      <td>TI_V_FilterStrength_4</td>
+      <td>P04</td>
+      </tr>
+    
+    <tr>
+      <td>TI_V_FilterStrength_5</td>
+      <td>P05</td>
+      </tr>
+    
+    <tr>
+      <td>TI_V_FilterStrength_6</td>
+      <td>P06</td>
+      </tr>
+    
+    <tr>
+      <td>TI_V_FilterStrength_7</td>
+      <td>P07</td>
+      </tr>
+    
+    <tr>
+      <td>TI_V_FilterStrength_8</td>
+      <td>P08</td>
+      </tr>
+    
+    <tr>
+      <td>TI_V_FilterStrength_9</td>
+      <td>P09</td>
+      </tr>
+    
+    <tr>
+      <td>TI_V_TempMode</td>
+      <td>Temperature Compensation</td>
+      </tr>
+    
+    <tr>
+      <td>TID_V_TempMode</td>
+      <td>The Temperature Compensation may be activated or deactivated</td>
+      </tr>
+    
+    <tr>
+      <td>TI_V_TempMode_off</td>
+      <td>Temperature Compensation is off</td>
+      </tr>
+    
+    <tr>
+      <td>TI_V_TempMode_on</td>
+      <td>Temperature Compensation is on</td>
+      </tr>
+    
+    <tr>
+      <td>TI_V_SwitchOnDelay</td>
+      <td>Switch-on/switch-off delay</td>
+      </tr>
+    
+    <tr>
+      <td>TID_V_SwitchOnDelay</td>
+      <td>If an object approaches the sensor, the output state of the sensor only changes after a holding time.
+Adjusting range: 1...20 s</td>
+      </tr>
+    
+    <tr>
+      <td>TI_V_SwitchOnDelay_0</td>
+      <td>Deactivated</td>
+      </tr>
+    
+    <tr>
+      <td>TI_V_SwitchOnDelay_1</td>
+      <td>1</td>
+      </tr>
+    
+    <tr>
+      <td>TI_V_SwitchOnDelay_2</td>
+      <td>2</td>
+      </tr>
+    
+    <tr>
+      <td>TI_V_SwitchOnDelay_3</td>
+      <td>3</td>
+      </tr>
+    
+    <tr>
+      <td>TI_V_SwitchOnDelay_4</td>
+      <td>4</td>
+      </tr>
+    
+    <tr>
+      <td>TI_V_SwitchOnDelay_5</td>
+      <td>5</td>
+      </tr>
+    
+    <tr>
+      <td>TI_V_SwitchOnDelay_6</td>
+      <td>6</td>
+      </tr>
+    
+    <tr>
+      <td>TI_V_SwitchOnDelay_7</td>
+      <td>7</td>
+      </tr>
+    
+    <tr>
+      <td>TI_V_SwitchOnDelay_8</td>
+      <td>8</td>
+      </tr>
+    
+    <tr>
+      <td>TI_V_SwitchOnDelay_9</td>
+      <td>9</td>
+      </tr>
+    
+    <tr>
+      <td>TI_V_SwitchOnDelay_10</td>
+      <td>10</td>
+      </tr>
+    
+    <tr>
+      <td>TI_V_SwitchOnDelay_11</td>
+      <td>11</td>
+      </tr>
+    
+    <tr>
+      <td>TI_V_SwitchOnDelay_12</td>
+      <td>12</td>
+      </tr>
+    
+    <tr>
+      <td>TI_V_SwitchOnDelay_13</td>
+      <td>13</td>
+      </tr>
+    
+    <tr>
+      <td>TI_V_SwitchOnDelay_14</td>
+      <td>14</td>
+      </tr>
+    
+    <tr>
+      <td>TI_V_SwitchOnDelay_15</td>
+      <td>15</td>
+      </tr>
+    
+    <tr>
+      <td>TI_V_SwitchOnDelay_16</td>
+      <td>16</td>
+      </tr>
+    
+    <tr>
+      <td>TI_V_SwitchOnDelay_17</td>
+      <td>17</td>
+      </tr>
+    
+    <tr>
+      <td>TI_V_SwitchOnDelay_18</td>
+      <td>18</td>
+      </tr>
+    
+    <tr>
+      <td>TI_V_SwitchOnDelay_19</td>
+      <td>19</td>
+      </tr>
+    
+    <tr>
+      <td>TI_V_SwitchOnDelay_20</td>
+      <td>20</td>
+      </tr>
+    
+    <tr>
+      <td>TI_V_NoiseSuppression</td>
+      <td>Interference noise suppression</td>
+      </tr>
+    
+    <tr>
+      <td>TID_V_NoiseSuppression</td>
+      <td>The interference noise suppressor detects and shunts out interference which may, for instance, be caused by compressed air.
+The state of the switched output is frozen during the interference.</td>
+      </tr>
+    
+    <tr>
+      <td>TI_V_NoiseSuppression_off</td>
+      <td>Deactivated</td>
+      </tr>
+    
+    <tr>
+      <td>TI_V_NoiseSuppression_on</td>
+      <td>Activated</td>
+      </tr>
+    
+    <tr>
+      <td>TI_V_PD</td>
+      <td>Prozess Data</td>
+      </tr>
+    
+    <tr>
+      <td>TID_V_PD</td>
+      <td>The measured distance value is output with a resolution of 0,1 mm.</td>
+      </tr>
+    
+    <tr>
+      <td>TI_V_PS</td>
+      <td>Switching status</td>
+      </tr>
+    
+    <tr>
+      <td>TID_V_PS</td>
+      <td></td>
+      </tr>
+    
+    <tr>
+      <td>TI_V_con</td>
+      <td>Connected</td>
+      </tr>
+    
+    <tr>
+      <td>TI_V_notcon</td>
+      <td>Not connected</td>
+      </tr>
+    
+    <tr>
+      <td>TI_SV_Teach_SwitchPoint</td>
+      <td>Teach one detect point</td>
+      </tr>
+    
+    <tr>
+      <td>TI_SV_Teach_SwitchPoint_Plus_8_percent</td>
+      <td>Teach one detect point 8% behind object</td>
+      </tr>
+    
+    <tr>
+      <td>TI_SV_Teach_Window_Mode_S1</td>
+      <td>Window-Mode: Teach first detect point</td>
+      </tr>
+    
+    <tr>
+      <td>TI_SV_Teach_Window_Mode_S2</td>
+      <td>Window-Mode: Teach second detect point</td>
+      </tr>
+    
+    <tr>
+      <td>TI_SV_Teach_Two_Way_Barrier</td>
+      <td>Window-Mode: Teach two-way barrier</td>
+      </tr>
+    
+    <tr>
+      <td>TI_SV_Teach_Factory_Setting</td>
+      <td>Load factory settings</td>
+      </tr>
+    
+    <tr>
+      <td>TI_ParameterChanged</td>
+      <td>Parameter changed</td>
+      </tr>
+    
+    <tr>
+      <td>TID_ParameterChanged</td>
+      <td>Parameter changed</td>
+      </tr>
+    
+    <tr>
+      <td>TI_TeachInFailed</td>
+      <td>Teach in failed</td>
+      </tr>
+    
+    <tr>
+      <td>TID_TeachInFailed</td>
+      <td>Teach in failed</td>
+      </tr>
+    }
+  </table>
+  <br />
+
+  
+  <style>
+    #tblIODD {
+      font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    #tblIODD td,
+    #tblIODD th {
+      border: 1px solid #ddd;
+      padding: 8px;
+    }
+
+    #tblIODD tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+
+    #tblIODD tr:hover {
+      background-color: #ddd;
+    }
+
+    #tblIODD th {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      text-align: left;
+      background-color: #294c67;
+      ;
+      color: white;
+    }
+  </style>
+</body>
+
+</html>

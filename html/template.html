@@ -1,0 +1,59 @@
+<html>
+
+<head>
+  <title>Export XML data to HTML Table </title>
+  <h2>IODD Viewer </h2>
+</head>
+
+<body>
+  <table id="tblIODD" cellpadding="0" cellspacing="0">
+    <tr>
+      <th>TextId</th>
+      <th>Value</th>
+      </tr>
+    {{range .Rows}}
+    <tr>
+      <td>{{ .TextId }}</td>
+      <td>{{ .Value }}</td>
+      </tr>
+    {{else}}
+    <tr>
+      <td colspan="5">No data found</td>
+      {{end}}}
+  </table>
+  <br />
+
+  <!-- thx to https://www.revisitclass.com/css/how-to-export-download-the-html-table-to-excel-using-javascript/ -->
+  <style>
+    #tblIODD {
+      font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    #tblIODD td,
+    #tblIODD th {
+      border: 1px solid #ddd;
+      padding: 8px;
+    }
+
+    #tblIODD tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+
+    #tblIODD tr:hover {
+      background-color: #ddd;
+    }
+
+    #tblIODD th {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      text-align: left;
+      background-color: #294c67;
+      ;
+      color: white;
+    }
+  </style>
+</body>
+
+</html>
