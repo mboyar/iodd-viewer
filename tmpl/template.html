@@ -1,7 +1,7 @@
 <html>
 
 <head>
-  <title>Export XML data to HTML Table </title>
+  <title>IODD in HTML Table </title>
   <h2>IODD Viewer </h2>
 </head>
 
@@ -10,18 +10,24 @@
     <tr>
       <th>TextId</th>
       <th>Value</th>
-      </tr>
+    </tr>
     {{range .Rows}}
     <tr>
       <td>{{ .TextId }}</td>
       <td>{{ .Value }}</td>
-      </tr>
+    </tr>
     {{else}}
     <tr>
       <td colspan="5">No data found</td>
       {{end}}}
   </table>
   <br />
+
+  <!-- thx to https://github.com/TutorialEdge/go-file-upload-tutorial -->
+  <form enctype="multipart/form-data" action="/upload" method="post">
+    <input type="file" name="myFile" />
+    <input type="submit" value="upload" />
+  </form>
 
   <!-- thx to https://www.revisitclass.com/css/how-to-export-download-the-html-table-to-excel-using-javascript/ -->
   <style>
