@@ -7,6 +7,8 @@ import (
 	"net/http"
 )
 
+var tmplFile = "tmpl/template.html"
+
 func uploadHandler(w http.ResponseWriter, r *http.Request) {
 
 	// thx to https://github.com/TutorialEdge/go-file-upload-tutorial
@@ -31,7 +33,7 @@ func uploadHandler(w http.ResponseWriter, r *http.Request) {
 	fmt.Printf("File Size: %+v\n", handler.Size)
 	fmt.Printf("MIME Header: %+v\n", handler.Header)
 
-	t, err := template.New("template.html").ParseFiles("../tmpl/template.html")
+	t, err := template.New("template.html").ParseFiles(tmplFile)
 	check(err)
 
 	err = t.Execute(w, generateHtmlData(file))
@@ -40,7 +42,7 @@ func uploadHandler(w http.ResponseWriter, r *http.Request) {
 
 func pageHandler(w http.ResponseWriter, r *http.Request) {
 
-	t, err := template.New("template.html").ParseFiles("../tmpl/template.html")
+	t, err := template.New("template.html").ParseFiles(tmplFile)
 	check(err)
 
 	var dataHtml Table
