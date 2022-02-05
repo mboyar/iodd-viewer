@@ -5,6 +5,7 @@ import (
 	"html/template"
 	"log"
 	"net/http"
+	"os"
 )
 
 var tmplFile = "tmpl/template.html"
@@ -55,5 +56,12 @@ func startWebserver() {
 	http.HandleFunc("/", pageHandler)
 	http.HandleFunc("/upload", uploadHandler)
 
-	log.Fatal(http.ListenAndServe(":8080", nil))
+	//Thx to https://inblog.in/Deploy-a-Go-Golang-Web-App-to-Heroku-EAx7ifbLzD
+	port := os.Getenv("PORT")
+
+  	if len(port) == 0 {
+		port = "8080"
+  	}
+
+	log.Fatal(http.ListenAndServe(":" + port, nil))
 }
