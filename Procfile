@@ -1,2 +1,0 @@
-web: bin/iodd-viewer
-
