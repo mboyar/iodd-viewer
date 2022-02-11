@@ -1,6 +1,17 @@
 package main
 
+import (
+	"os"
+)
+
 func main() {
 
-	startWebserver()
+	chPort := make(chan string)
+
+	if len(os.Args) == 2 && os.Args[1] == "--webview" {
+		go webserverStart(chPort)
+		webviewStart(chPort)
+	} else {
+		webserverStart(nil)
+	}
 }

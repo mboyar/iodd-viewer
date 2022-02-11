@@ -9,6 +9,7 @@ import (
 )
 
 var tmplFile = "tmpl/template.html"
+var port string
 
 func uploadHandler(w http.ResponseWriter, r *http.Request) {
 
@@ -51,7 +52,7 @@ func pageHandler(w http.ResponseWriter, r *http.Request) {
 	check(err)
 }
 
-func startWebserver() {
+func webserverStart(c chan string) {
 
 	http.HandleFunc("/", pageHandler)
 	http.HandleFunc("/upload", uploadHandler)
@@ -63,5 +64,9 @@ func startWebserver() {
 		port = "8080"
   	}
 
+	if c != nil {
+		c <- port
+	}
+	
 	log.Fatal(http.ListenAndServe(":" + port, nil))
 }
