@@ -1,3 +1,5 @@
+// +build desktop
+
 package main
 
 import (
