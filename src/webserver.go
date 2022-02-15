@@ -60,13 +60,13 @@ func webserverStart(c chan string) {
 	//Thx to https://inblog.in/Deploy-a-Go-Golang-Web-App-to-Heroku-EAx7ifbLzD
 	port := os.Getenv("PORT")
 
-  	if len(port) == 0 {
+	if len(port) == 0 {
 		port = "8080"
-  	}
+	}
 
 	if c != nil {
 		c <- port
 	}
-	
-	log.Fatal(http.ListenAndServe(":" + port, nil))
+
+	log.Fatal(http.ListenAndServe(":"+port, nil))
 }

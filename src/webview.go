@@ -1,11 +1,14 @@
+// +build desktop
+
 package main
 
 import (
-	"github.com/webview/webview"
 	"fmt"
+
+	"github.com/webview/webview"
 )
 
-func webviewStart(c chan string){
+func webviewStart(c chan string) {
 
 	debug := true
 
